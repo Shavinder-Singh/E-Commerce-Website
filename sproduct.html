@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sproduct</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header_section">
+            <a href="#"><img src="./images/cart-removebg-preview.png" alt="logo" class="header_logo" width="80px"></a>
+            <div>
+                <ul class="header_lists_wrapper">
+                    <svg class="close_icon_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px"
+                        height="50px">
+                        <path
+                            d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+                    </svg>
+                    <li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
+                    <li><a href="#" class="shop" onclick="window.location.href='shop.html'">Shop</a></li>
+                    <li><a href="#" onclick="window.location.href='blog.html'">Blog</a></li>
+                    <li><a href="#" onclick="window.location.href='about.html'">About</a></li>
+                    <li><a href="#" onclick="window.location.href='contact.html'">Contact</a></li>
+                    <svg class="header_cart_bag" onclick="window.location.href='cart.html'" version="1.0"
+                        xmlns="http://www.w3.org/2000/svg" width="30px" height="50.000000pt"
+                        viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#000000"
+                            stroke="none">
+                            <path d="M201 466 c-13 -7 -30 -24 -37 -37 -16 -28 -18 -79 -4 -79 6 0 10 9
+10 20 0 60 56 102 109 81 29 -13 51 -47 51 -81 0 -11 5 -20 10 -20 6 0 10 11
+10 25 0 79 -81 129 -149 91z" />
+                            <path d="M145 330 c-3 -5 -19 -10 -35 -10 -26 0 -29 -4 -43 -67 -8 -38 -15
+-77 -14 -88 0 -11 -3 -46 -7 -77 -7 -54 -6 -58 13 -59 27 0 355 0 382 0 19 1
+20 5 13 58 -4 32 -7 67 -7 78 1 11 -6 50 -14 88 -14 62 -17 67 -42 67 -15 0
+-32 5 -39 12 -9 9 -15 9 -24 0 -15 -15 -144 -16 -153 -2 -3 6 -10 10 -15 10
+-5 0 -12 -4 -15 -10z m264 -67 c20 -79 21 -77 -39 -90 -30 -6 -84 -11 -120
+-11 -36 0 -90 5 -120 11 -60 13 -59 11 -39 90 l10 37 149 0 149 0 10 -37z
+m-244 -118 c22 -4 50 -11 63 -17 16 -8 28 -8 45 0 12 6 40 13 62 17 22 3 50 9
+62 12 19 4 23 0 28 -34 4 -21 9 -46 12 -55 4 -17 -10 -18 -186 -18 l-190 0 5
+33 c13 77 14 79 37 74 12 -3 40 -9 62 -12z" />
+                        </g>
+                    </svg>
+                </ul>
+                <div class="mobile_nav">
+                    <svg width="30px" version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="50.000000pt"
+                        viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#000000"
+                            stroke="none">
+                            <path d="M201 466 c-13 -7 -30 -24 -37 -37 -16 -28 -18 -79 -4 -79 6 0 10 9
+10 20 0 60 56 102 109 81 29 -13 51 -47 51 -81 0 -11 5 -20 10 -20 6 0 10 11
+10 25 0 79 -81 129 -149 91z" />
+                            <path d="M145 330 c-3 -5 -19 -10 -35 -10 -26 0 -29 -4 -43 -67 -8 -38 -15
+-77 -14 -88 0 -11 -3 -46 -7 -77 -7 -54 -6 -58 13 -59 27 0 355 0 382 0 19 1
+20 5 13 58 -4 32 -7 67 -7 78 1 11 -6 50 -14 88 -14 62 -17 67 -42 67 -15 0
+-32 5 -39 12 -9 9 -15 9 -24 0 -15 -15 -144 -16 -153 -2 -3 6 -10 10 -15 10
+-5 0 -12 -4 -15 -10z m264 -67 c20 -79 21 -77 -39 -90 -30 -6 -84 -11 -120
+-11 -36 0 -90 5 -120 11 -60 13 -59 11 -39 90 l10 37 149 0 149 0 10 -37z
+m-244 -118 c22 -4 50 -11 63 -17 16 -8 28 -8 45 0 12 6 40 13 62 17 22 3 50 9
+62 12 19 4 23 0 28 -34 4 -21 9 -46 12 -55 4 -17 -10 -18 -186 -18 l-190 0 5
+33 c13 77 14 79 37 74 12 -3 40 -9 62 -12z" />
+                        </g>
+                    </svg>
+                    <svg width="30px" class="ham_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                        width="50px" height="50px">
+                        <path
+                            d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Product Details -->
+    <section class="product_details_section">
+        <div class="prodetails_wrapper">
+            <div class="single_pro_image">
+                <img src="./images/fp4.jpeg" alt="image" width="100%" class="main_image">
+                <div class="small_image_group">
+                    <div class="small_image_column">
+                        <img src="./images/fp4.jpeg" width="100%" class="small_image">
+                    </div>
+                    <div class="small_image_column">
+                        <img src="./images/fp3.jpeg" width="100%" class="small_image">
+                    </div>
+                    <div class="small_image_column">
+                        <img src="./images/fp4.jpeg" width="100%" class="small_image">
+                    </div>
+                    <div class="small_image_column">
+                        <img src="./images/fp5.jpeg" width="100%" class="small_image">
+                    </div>
+                </div>
+            </div>
+            <div class="single_pro_details">
+                <h4 class="product_title">Zara</h4>
+                <h4 class="men_tshirt product_name">Men's Fashion T Shirt</h4>
+                <h2 class="producr_price">$139.00</h2>
+                <select class="sproduct_option" id="sizeSelect">
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <div>
+                    <button class="sproduct_button">Add To Cart</button>
+                </div>
+                <h4 class="product_detail_content">Product Details</h4>
+                <p>Priced with your budget in mind, our collection boasts a range of options that cater to both your
+                    fashion preferences and financial considerations. From classic essentials to on-trend styles, each
+                    shirt is thoughtfully designed to provide you with the utmost value. Embrace the perfect balance of
+                    cost-effectiveness and fashion-forwardness as you explore our selection. Elevate your wardrobe
+                    without emptying your wallet – because looking good should be accessible to everyone</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- New Arrivals -->
+    <section>
+        <div class="feature_product_section">
+            <h1> New Arrivals</h1>
+            <p>Summer Collection New Morden Design</p>
+            <div class="feature_product_container_main">
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp1.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp1.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp3.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp4.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp5.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp8.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp7.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+                <div class="feature_products_wrapper">
+                    <div class="feature_pro">
+                        <img src="./images/fp8.jpeg" alt="image" class="feature_product_image">
+                        <div class="feature_product_description">
+                            <span>Adidas</span>
+                            <h4>Cartoon Astronaut T-shirts</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>$78</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping link_cart_fp feature_product_cart_icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News Letter -->
+    <section>
+        <div class="newsletter_wrapper">
+            <div class="news_text">
+                <h2>Sign Up For Newsletters</h2>
+                <p>Get E-mail updates about our latest shop and <span style="color: gold; font-weight: 900;">special
+                        offers</span></p>
+            </div>
+            <div class="news_input_form_wrapper">
+                <input type="text" name="text" placeholder="Your e-mail address" class="input_newsletter">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </section>
+    <!-- Foooter Section -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="col foot_col1">
+                <img src="./images/cart-removebg-preview.png" alt="logo" width="120px">
+                <h6>Contact</h6>
+                <p><strong style="color: black;">Address:</strong>562 Wellington Road,Street 32,San Fransisco</p>
+                <p><strong style="color: black;">Phone</strong>+01222 388/(+91)0123456789</p>
+                <p><strong style="color: black;">Hours:</strong>10.00-18:00,Mon-Sat</p>
+                <div class="follow_container">
+                    <h5>Follow Us</h5>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="col foot_col2">
+                <h6>About</h6>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privay Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col foot_col3">
+                <h6>My Account</h6>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#"> My Wishlist</a>
+                <a href="#"> Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col foot_col4">
+                <h6>Install App</h6>
+                <p>From App Store or Google Play</p>
+                <div>
+                    <img src="./images/apple.png" alt="media" width="100px">
+                    <img src="./images/gplay.png" alt="media" width="110px">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <div class="footer_media">
+                    <img src="./images/visa.jpg" width="58px">
+                    <img src="./images/master card.webp" width="58px">
+                    <img src="./images/logo bank.png" width="58px">
+                </div>
+            </div>
+        </div>
+        <p class="copyright">@2023 Tech2etc-HTML CSS Ecommerce Template</p>
+    </footer>
+    <script src="./js/sproduct.js"></script>
+    <!-- <script type="module" src="./js/main.js"></script> -->
+</body>
+
+</html>

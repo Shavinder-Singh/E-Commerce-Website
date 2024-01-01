@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <section class="product_details_section">
+        <div class="prodetails_wrapper">
+            <div class="single_pro_image">
+                <img src="./images/fp4.jpeg" alt="image" width="100%" class="main_image">
+                <div class="small_image_group">
+                    <div class="small_image_column">
+                        <img src="./images/fp4.jpeg" width="100%" class="small_image">
+                    </div>
+                    <div class="small_image_column">
+                        <img src="./images/fp3.jpeg" width="100%" class="small_image">
+                    </div>
+                    <div class="small_image_column">
+                        <img src="./images/fp4.jpeg" width="100%" class="small_image">
+                    </div>
+                    <div class="small_image_column">
+                        <img src="./images/fp5.jpeg" width="100%" class="small_image">
+                    </div>
+                </div>
+            </div>
+            <div class="single_pro_details">
+                <h4 class="product_title">Zara</h4>
+                <h4 class="men_tshirt product_name">Men's Fashion T Shirt</h4>
+                <h2 class="producr_price">$139.00</h2>
+                <select class="sproduct_option" id="sizeSelect">
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <div>
+                    <button class="sproduct_button">Add To Cart</button>
+                </div>
+                <h4 class="product_detail_content">Product Details</h4>
+                <p>Priced with your budget in mind, our collection boasts a range of options that cater to both your
+                    fashion preferences and financial considerations. From classic essentials to on-trend styles, each
+                    shirt is thoughtfully designed to provide you with the utmost value. Embrace the perfect balance of
+                    cost-effectiveness and fashion-forwardness as you explore our selection. Elevate your wardrobe
+                    without emptying your wallet – because looking good should be accessible to everyone</p>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="cart_table_wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>REMOVE</th>
+                        <th>IMAGE</th>
+                        <th>PRODUCT</th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                <tbody class="table_body_cart">
+                    <tr>
+                        <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        <td><img src="./images/fp1.jpeg" alt="image" class="table_image_cart"></td>
+                        <td class="product_description">Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" id="cart_number" value="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <script>
+        var cart_container = document.querySelector(".table_body_cart");
+        var sproduct_button=document.querySelector(".sproduct_button")
+        sproduct_button.addEventListener("click", addtocart);
+        console.log(sproduct_button);
+
+
+        function addtocart(e) {
+            add_btn = e.target;
+            product_container = add_btn.closest(".prodetails_wrapper");
+            product_image = product_container.querySelector(".main_image").src;
+            product_title = product_container.querySelector(".product_title").innerHTML;
+            product_price = product_container.querySelector(".producr_price").innerHTML;
+            product_price = product_container.querySelector(".producr_price").innerHTML;
+            let cartItem = document.createElement("tr");
+            cartItem.innerHTML = `
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+            <td><img src=${product_image} alt="image" class="table_image_cart"></td>
+            <td class="product_description">${product_title}</td>
+            <td>${product_price}</td>
+            <td><input type="number" id="cart_number" value="1"></td>
+            <td>${product_price}</td>
+           `
+            cart_container.appendChild(cartItem);
+        }
+    </script>
+</body>
+
+</html>
